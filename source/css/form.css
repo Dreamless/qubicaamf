@@ -1,0 +1,107 @@
+form p {
+	padding:10px 0;
+	font-size:14px;
+	color:#383836;
+	margin-bottom:0;
+}
+
+form p:before,
+form p:after {
+    content: "";
+    display: table;
+}
+
+form p:after {
+    clear: both;
+}
+
+.jqTransformHidden {
+	display:none;
+}
+
+.buttons {
+	padding-top:20px;
+}
+
+.button {
+	display:inline-block;
+	background:#7597ab;
+	font-weight:bold;
+	font-size:22px;
+	text-decoration:none;
+	border:none;
+	text-align:center;
+	cursor:pointer;
+	height:45px;
+	line-height:45px;
+	padding:0 30px;
+	color:#e8f6fe;
+	text-transform:uppercase;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-transition: all 0.5s ease-in-out; 
+	-moz-transition: all 0.5s ease-in-out; 
+	-khtml-transition: all 0.5s ease-in-out; 
+	-o-transition: all 0.5s ease-in-out; 
+	-ms-transition: all 0.5s ease-in-out; 
+	transition: all 0.5s ease-in-out; 
+}
+
+.button:hover {
+	background:#86aec5;
+	text-decoration:none;
+}
+
+.req {
+	color:#FF0000;
+}
+
+.input-field {
+	background:#f8f8f4;
+	border: 1px solid #bdbdb3;
+	padding:6px 5px;
+	font-size:14px;
+	width:230px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.area {
+	background: url(../images/input_field.png) repeat-x #bbb7aa;
+	border: none;
+	padding:7px;
+	width:625px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.rss-mod-field {
+	font-size:11px;
+	line-height:12px;
+	color:#4c4c4c;
+	background:#ebebeb;
+	border:none;
+	-webkit-border-radius:5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding:8px 9px;
+	width:139px;
+	float:left;
+	margin-right:7px;
+}
+
+.rss-mod-btn {
+	width:26px;
+	height:26px;
+	line-height:22px;
+	background: #FFFFFF;
+	color:#121212;
+	font-size:11px;
+	border:2px solid #ed1c24;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
