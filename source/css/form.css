@@ -24,7 +24,6 @@ form p:after {
 }
 
 .button {
-	display:inline-block;
 	background:#7597ab;
 	font-weight:bold;
 	font-size:22px;
@@ -37,15 +36,6 @@ form p:after {
 	padding:0 30px;
 	color:#e8f6fe;
 	text-transform:uppercase;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	-webkit-transition: all 0.5s ease-in-out; 
-	-moz-transition: all 0.5s ease-in-out; 
-	-khtml-transition: all 0.5s ease-in-out; 
-	-o-transition: all 0.5s ease-in-out; 
-	-ms-transition: all 0.5s ease-in-out; 
-	transition: all 0.5s ease-in-out; 
 }
 
 .button:hover {
@@ -105,3 +95,145 @@ form p:after {
 	-moz-border-radius: 50%;
 	border-radius: 50%;
 }
+
+.mirror-buttons-1 {
+	display:inline-block;
+	text-decoration:none;
+	font-size:14px;
+	font-weight:bold;
+	border:3px solid #FFFFFF;
+	color:#FFFFFF;
+	height:40px;
+	line-height:40px;
+	padding:0 20px;
+	-webkit-transition: all .3s ease-in-out; 
+	-moz-transition: all .3s ease-in-out; 
+	-khtml-transition: all .3s ease-in-out; 
+	-o-transition: all .3s ease-in-out; 
+	-ms-transition: all .3s ease-in-out; 
+	transition: all .3s ease-in-out;
+	position: relative;
+}
+
+.mrb-1-left {
+	-webkit-border-radius: 40px 0 0 40px;
+	-moz-border-radius: 40px 0 0 40px;
+	border-radius: 40px 0 0 40px;
+	margin-right:-3px;
+}
+
+.mrb-1-right {
+	-webkit-border-radius: 0 40px 40px 0;
+	-moz-border-radius: 0 40px 40px 0;
+	border-radius: 0 40px 40px 0;
+}
+
+.mrb-wbuy {
+	padding-right:50px;
+}
+
+.mirror-buttons-1:hover {
+	border-color:#2d2d2d;
+	color:#2d2d2d;
+	text-decoration:none;
+	z-index:1;
+}
+
+.mirror-buttons-1 .buy-cart {
+	width:27px;
+	height:24px;
+	display:block;
+	position:absolute;
+	right:15px;
+	top:4px;
+}
+
+.mirror-buttons-1 .buy-cart .str1 {stroke:#FFFFFF;stroke-width:1.4868}
+.mirror-buttons-1 .buy-cart .str0 {stroke:#FFFFFF;stroke-width:4.46041}
+.mirror-buttons-1 .buy-cart .fil1 {fill:none}
+.mirror-buttons-1 .buy-cart .fil0 {fill:#FFFFFF;fill-rule:nonzero}
+
+.mirror-buttons-1:hover .buy-cart .str1 {stroke:#2d2d2d;}
+.mirror-buttons-1:hover .buy-cart .str0 {stroke:#2d2d2d;}
+.mirror-buttons-1:hover .buy-cart .fil0 {fill:#2d2d2d;}
+
+.buy-btn-1 {
+	border:none;
+	cursor:pointer;
+	width:60px;
+	height:30px;
+	line-height:30px;
+	padding:0 15px;
+	font-size:12px;
+	color:#232323;
+	position:relative;
+	display:inline-block;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	text-align:left;
+	z-index:1;
+	overflow:hidden;
+	-webkit-transition: all .3s ease-in-out; 
+	-moz-transition: all .3s ease-in-out; 
+	-khtml-transition: all .3s ease-in-out; 
+	-o-transition: all .3s ease-in-out; 
+	-ms-transition: all .3s ease-in-out; 
+	transition: all .3s ease-in-out;
+}
+
+.buy-btn-1::before,
+.buy-btn-1::after {
+	content:"";
+	display:block;
+	position:absolute;
+	right:0;
+	top:0;
+	height:30px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	z-index:-1;
+	-webkit-transition: all .3s ease-in-out; 
+	-moz-transition: all .3s ease-in-out; 
+	-khtml-transition: all .3s ease-in-out; 
+	-o-transition: all .3s ease-in-out; 
+	-ms-transition: all .3s ease-in-out; 
+	transition: all .3s ease-in-out;
+}
+
+.buy-btn-1::before {
+	background:#dcdcdc;
+	width:100%;
+}
+
+.buy-btn-1::after {
+	background:#ed1c24;
+	width:0;
+}
+
+.buy-btn-1:hover {
+	text-decoration:none;
+	color:#FFFFFF;
+}
+
+.buy-btn-1:hover::after {
+	width:100%;
+}
+
+.buy-btn-1 span {
+	position:absolute;
+	top:2px;
+	right:10px;
+	width:22px;
+	height:21px;
+}
+
+.buy-btn-1 .str1 {stroke:#2d2d2d;stroke-width:1.4868}
+.buy-btn-1 .str0 {stroke:#2d2d2d;stroke-width:4.46041}
+.buy-btn-1 .fil1 {fill:none}
+.buy-btn-1 .fil0 {fill:#2d2d2d;fill-rule:nonzero}
+
+.buy-btn-1:hover .str1 {stroke:#ffffff;}
+.buy-btn-1:hover .str0 {stroke:#ffffff;}
+.buy-btn-1:hover .fil0 {fill:#ffffff;}

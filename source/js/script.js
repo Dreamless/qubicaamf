@@ -36,13 +36,21 @@ $(document).ready(function() {
 		scOne.goToPreviousSlide();
 	});
 	
-	$('#main-banner ul').bxSlider({
-		auto: true,
+	var scTwo = $('.main-banner-inn').bxSlider({
+		auto: false,
 		pager: false,
 		controls:false,
 		pause: 7000,
-		easing: 'easeInOutExpo',
-		speed: 300
+		easing: 'easeInQuad',
+		speed: 600
+	});
+	
+	$(".mb-buttons .right").click(function() {
+		scTwo.goToNextSlide();
+	});
+	
+	$(".mb-buttons .left").click(function() {
+		scTwo.goToPreviousSlide();
 	});
 	
 });
